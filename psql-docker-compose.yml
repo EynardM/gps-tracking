@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  postgres:
+    container_name : psql-db
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_DB: amm_db
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: 123
+      POSTGRES_INITDB_ARGS: '--data-checksums'
+      POSTGRES_HOST_ALL: "0.0.0.0"
+    ports:
+      - "5432:5432"
+    networks:
+      - amm_net
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+
+networks:
+  amm_net:
+    driver: bridge

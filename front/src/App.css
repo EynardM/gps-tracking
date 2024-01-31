@@ -1,0 +1,78 @@
+/* Center align text */
+.App {
+  text-align: center;
+}
+
+/* App logo */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/* Animation for App logo */
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* App header styles */
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* App link */
+.App-link {
+  color: #61dafb;
+}
+
+/* Animation for App logo spinning */
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Map container */
+.map-container {
+  height: 50%;
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Snowfall effect */
+.snowfall {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Glacial tile layer styles */
+.glacial-tile-layer {
+  filter: hue-rotate(400deg) saturate(120%) contrast(120%) brightness(90%);
+}
+
+/* Background image */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./img/background.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
