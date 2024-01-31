@@ -109,10 +109,12 @@ For separating the broker, consumer, and producers on the same network:
    - Update the addresses in the environment section of the file `broker-docker-compose.yml`, in the following line `KAFKA_CFG_ADVERTISED_LISTENERS=PLAINTEXT://172.17.10.1:9092,EXTERNAL://172.17.10.1:9093`. Change the 172.17.10.1 into the adress that you want.
    
 
-<h2>Little video to show a demo</h2>
-<video src="KafkaProject.mp4" controls title="Title"></video>
+## Little GIF to show a demo
    
+![Gif that show the demo](KafkaProject.gif)
 
+## Authors 
 
-<h2>Show that we are receiving the good coordinates</h2>
-<video src="producer1-frontdocker-showingconsole-1.mp4" controls title="Title"></video>
+Florian Bergère </br>
+Maxime Eynard </br>
+Amaury Peterschmitt
