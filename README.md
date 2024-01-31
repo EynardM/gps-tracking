@@ -82,7 +82,7 @@ If you intend to run the entire setup locally, follow these steps:
 
 1. **Update IP Address:**
     - Open relevant files.
-    - Change the IP address variable to either `localhost` or `127.0.0.1`.
+    - Change the IP address variable (in config.py and src/Components/Config.js and in the broker-docker-compose.yml).
 
 ### Networked Deployment
 
