@@ -58,13 +58,13 @@ The producer will also connect to the broker to send data.
 5. Start the FastAPI API: `docker compose -f api-docker-compose.yml up --build` <br>
 The API will first create a WebSocket to the frontend. Then, every time it receives a notification from the database, it will send the received content over the WebSocket, which can then process the received data.
 
-6. Start the React user interface that will connect to the WebSocket to display the data in real-time: `docker compose -f react-docker-compose.yml up --build` <br>
-The user interface connects to the WebSocket to retrieve data. It then processes and displays the received information.
+6. Start the React user interface that will connect to the WebSocket to display the data in real-time: `docker compose -f front-docker-compose.yml up --build` <br>
+The user interface connects to the WebSocket to retrieve data. It then processes and displays the received information. (look at the video producer1-frontdocker-showingconsole.mp4)
 
 ## Stopping the Project
 
 If you have executed all commands in separate terminals, you will need to do a "Ctrl + C" to stop the container. However, you will still need to stop your containers. <br>
-Example for the stop command: `docker compose -f react-docker-compose.yml down`
+Example for the stop command: `docker compose -f front-docker-compose.yml down`
 
 ## Access to the Database
 
